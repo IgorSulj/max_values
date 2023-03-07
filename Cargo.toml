@@ -1,9 +1,9 @@
 [package]
 name = "max_values"
 version = "1.0.0"
+authors = ["Ihar Siulzhyn"]
+description = "Struct and iterator extension trait for getting max values out of given"
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 arrayvec = "^0.7"
