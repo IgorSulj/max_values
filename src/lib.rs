@@ -4,13 +4,14 @@ use arrayvec::IntoIter;
 use arrayvec::ArrayVec;
 
 
+/// Main struct for getting max values out of given
 #[derive(Debug, Clone)]
 pub struct MaxValues<T: Ord, const N: usize> {
     data: ArrayVec<T, N>
 }
 
-impl<const N: usize, T: Ord> MaxValues<T, N> {
-    /// Creates new empty TopValues data structure
+impl<T: Ord, const N: usize> MaxValues<T, N> {
+    /// Creates new empty [`MaxValues`] data structure
     pub fn new() -> Self {
         MaxValues { data: ArrayVec::new() }
     }
@@ -61,7 +62,7 @@ impl<T: Ord, const N: usize> IntoIterator for MaxValues<T, N> {
     }
 }
 
-pub mod push;
+mod push;
 mod iter_ext;
 pub use iter_ext::MaxValuesIterExt;
 

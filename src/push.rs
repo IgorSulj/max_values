@@ -2,7 +2,9 @@
 use crate::MaxValues;
 
 impl<T: Ord, const N: usize> MaxValues<T, N> {
-    /// Pushes an element into the data structure. May replace one of the previously pushed elements.
+    /// Pushes an element into the data structure, 
+    /// if it is bigger than one of the elements.
+    /// May replace one of the previously pushed elements.
     pub fn push(&mut self, value: T) {
         if self.data.len() < N {
             self.push_back(value);
