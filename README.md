@@ -1,6 +1,6 @@
 # MaxValues
 ### Package, that allows you to effectively get max values out of any sequence
-For documentation, see [this](docs.rs/max_values/1.0.0/max_values)
+For full documentation, see [this](docs.rs/max_values/1.0.0/max_values)
 
 ## Basic usage
 The basic usage of this package looks like this
