@@ -1,6 +1,6 @@
 # MaxValues
-### Package, that allows you to effectively get max values out of any sequence
-For full documentation, see [this](docs.rs/max_values/1.0.0/max_values)
+### Package that allows you to effectively get max values out of any sequence
+For full documentation see [this](docs.rs/max_values/1.0.0/max_values)
 
 ## Basic usage
 The basic usage of this package looks like this
@@ -21,12 +21,9 @@ fn main() {
 
     values.push(5);
     assert_eq!(values.iter().copied().collect::<HashSet<_>>(), HashSet::from([3, 4, 5]));
-
-    values.push(4);
-    assert_eq!(values.iter().copied().collect::<HashSet<_>>(), HashSet::from([4, 4, 5]));
 }
 ```
-Beware, that ```MaxValues``` struct doesn't guarantee any order of elements. That's why we're transforming it into hashset for ```assert_eq``` macro.
+Beware, that ```MaxValues``` struct doesn't guarantee any order of elements. That's why we're transforming it into ```HashSet``` for ```assert_eq``` macro.
 
 ## Using iterator adaptor
 Common pattern is to iterate through collection and push it elements to `MaxValues` like this:
